@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PT Dievas Putra Abadi | Transportasi & Instalasi EV Charging Indonesia</title>
+<title>PT Dievas Putra Abadi | EV Infrastructure Indonesia</title>
 
-<meta name="description" content="PT Dievas Putra Abadi menyediakan layanan transportasi, instalasi EV charging, listrik, internet, dan infrastruktur kendaraan listrik di Indonesia.">
+<meta name="description" content="PT Dievas Putra Abadi menyediakan instalasi EV Charging Station, electrical system, jaringan dan infrastruktur kendaraan listrik Indonesia.">
+
+<meta name="keywords" content="EV Charging Indonesia, Instalasi EV, Electrical Contractor, Infrastruktur Kendaraan Listrik">
 
 <script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 <style>
 
@@ -19,126 +25,131 @@ box-sizing:border-box;
 scroll-behavior:smooth;
 }
 
+
 body{
+
 background:#050505;
 color:white;
-font-family:Inter,sans-serif;
-overflow-x:hidden;
+font-family:Inter,Arial,sans-serif;
+
 }
+
 
 .hero{
 
-background:url('https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmYZKw8i7JElFC0BwiFxcbiIvTz3xO8bwxL1-a-OkVMFx-DTz5zfG0yHyzaH-sHIh85sJTKCMnU22fk5aVX1tHJY91tjutz2SzQEdPbn_BvwV02016Eg5DIqQzhu-paTK-sEJaYWWDjWmGH=s680-w680-h510-rw');
-
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-
 min-height:100vh;
-
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-
-position:relative;
-}
-
-.hero::before{
-
-content:"";
-
-position:absolute;
-inset:0;
 
 background:
 linear-gradient(
-180deg,
-rgba(0,0,0,.8),
-rgba(0,0,0,.55),
+rgba(0,0,0,.75),
 rgba(0,0,0,.9)
-);
+),
+url("https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmYZKw8i7JElFC0BwiFxcbiIvTz3xO8bwxL1-a-OkVMFx-DTz5zfG0yHyzaH-sHIh85sJTKCMnU22fk5aVX1tHJY91tjutz2SzQEdPbn_BvwV02016Eg5DIqQzhu-paTK-sEJaYWWDjWmGH=s680-w680-h510-rw");
+
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
 
 }
 
 
 .glass{
 
-background:rgba(255,255,255,.05);
+background:
+rgba(255,255,255,.06);
 
-backdrop-filter:blur(20px);
+backdrop-filter:blur(15px);
 
-border:1px solid rgba(255,255,255,.1);
-
-transition:.4s;
+border:
+1px solid rgba(255,255,255,.12);
 
 }
 
 
 .glass:hover{
 
-transform:translateY(-5px);
+transform:translateY(-8px);
 
-border-color:white;
+border-color:#00ff88;
 
-}
-
-
-.gallery img{
-
-height:320px;
-
-width:100%;
-
-object-fit:cover;
-
-border-radius:20px;
-
-transition:.5s;
+transition:.4s;
 
 }
 
 
-.gallery img:hover{
 
-transform:scale(1.05);
+.title{
+
+font-size:45px;
+font-weight:800;
 
 }
 
 
-.section-title{
 
-font-size:42px;
+.btn-primary{
+
+background:#00ff88;
+color:black;
+
+padding:15px 35px;
+
+border-radius:50px;
 
 font-weight:700;
+
+}
+
+
+
+.btn-outline{
+
+border:1px solid white;
+
+padding:15px 35px;
+
+border-radius:50px;
+
+}
+
+
+
+.card-icon{
+
+font-size:40px;
 
 margin-bottom:20px;
 
 }
 
 
+
 .wa{
 
 position:fixed;
 
-bottom:20px;
-
-right:20px;
+right:25px;
+bottom:25px;
 
 background:#25D366;
 
-padding:15px 22px;
+padding:16px 25px;
 
-border-radius:999px;
+border-radius:50px;
 
-z-index:999;
+z-index:99;
 
 font-weight:bold;
 
 }
 
 
+
 </style>
+
 
 </head>
 
@@ -146,72 +157,118 @@ font-weight:bold;
 <body>
 
 
-<header class="fixed top-0 w-full z-50 glass">
+
+<!-- NAVBAR -->
+
+<header class="fixed top-0 w-full z-50 bg-black/60 backdrop-blur">
+
 
 <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
 
 
-<h1 class="font-bold text-xl tracking-widest">
-DIEVAS PUTRA ABADI
+<h1 class="font-bold tracking-widest text-xl">
+
+DIEVAS
+
 </h1>
 
 
 <nav class="hidden md:flex gap-8 text-sm">
 
-<a href="#">Home</a>
 
-<a href="#about">Tentang</a>
+<a href="#about">
+Tentang
+</a>
 
-<a href="#services">Layanan</a>
 
-<a href="#gallery">Project</a>
+<a href="#services">
+Layanan
+</a>
 
-<a href="#contact">Kontak</a>
+
+<a href="#project">
+Project
+</a>
+
+
+<a href="#contact">
+Kontak
+</a>
+
 
 </nav>
 
 
+<a href="#contact"
+class="hidden md:block btn-primary">
+
+Konsultasi
+
+</a>
+
+
 </div>
+
 
 </header>
 
 
 
+
+
+<!-- HERO -->
+
+
 <section class="hero">
 
 
-<div class="relative z-10 max-w-5xl px-6">
+<div class="max-w-6xl mx-auto px-6">
 
 
-<h1 class="text-5xl md:text-7xl font-bold mb-6">
+<div data-aos="fade-up">
 
-Infrastruktur EV<br>
-Dan Instalasi Profesional Indonesia
+
+<h1 class="title md:text-7xl">
+
+Membangun
+
+<br>
+
+Infrastruktur
+
+<br>
+
+Kendaraan Listrik Indonesia
 
 </h1>
 
 
-<p class="text-gray-300 text-lg max-w-3xl mx-auto">
 
-PT Dievas Putra Abadi adalah perusahaan penyedia jasa transportasi dan instalasi yang mendukung pembangunan infrastruktur kendaraan listrik, termasuk instalasi charging station EV, kelistrikan, dan jaringan internet.
+<p class="mt-8 text-gray-300 text-lg max-w-3xl leading-8">
+
+
+PT Dievas Putra Abadi menyediakan solusi instalasi EV Charging Station,
+kelistrikan, jaringan komunikasi dan dukungan teknis untuk kebutuhan
+infrastruktur modern.
+
 
 </p>
 
 
 
-<div class="mt-10 flex justify-center gap-4 flex-wrap">
+<div class="flex gap-5 mt-10 flex-wrap">
 
 
 <a href="#contact"
-class="bg-white text-black px-8 py-4 rounded-full font-semibold">
+class="btn-primary">
 
-Konsultasi Proyek
+Mulai Konsultasi
 
 </a>
 
 
-<a href="#gallery"
-class="border border-white px-8 py-4 rounded-full">
+<a href="#project"
+class="btn-outline">
 
 Lihat Project
 
@@ -224,26 +281,125 @@ Lihat Project
 </div>
 
 
+</div>
+
+
 </section>
 
 
 
-<section id="about" class="py-28">
 
 
-<div class="max-w-6xl mx-auto px-6 text-center">
+
+<!-- STATISTIC -->
 
 
-<h2 class="section-title">
-Tentang PT Dievas Putra Abadi
+<section class="py-20">
+
+
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-6">
+
+
+<div class="glass rounded-3xl p-8 text-center">
+
+<h2 class="text-4xl font-bold text-green-400">
+
+10+
+
+</h2>
+
+<p class="text-gray-400 mt-2">
+Project Support
+</p>
+
+</div>
+
+
+
+<div class="glass rounded-3xl p-8 text-center">
+
+<h2 class="text-4xl font-bold text-green-400">
+
+24/7
+
+</h2>
+
+<p class="text-gray-400 mt-2">
+Technical Support
+</p>
+
+</div>
+
+
+
+<div class="glass rounded-3xl p-8 text-center">
+
+<h2 class="text-4xl font-bold text-green-400">
+
+100%
+
+</h2>
+
+<p class="text-gray-400 mt-2">
+Commitment
+</p>
+
+</div>
+
+
+
+<div class="glass rounded-3xl p-8 text-center">
+
+<h2 class="text-4xl font-bold text-green-400">
+
+ID
+
+</h2>
+
+<p class="text-gray-400 mt-2">
+Indonesia Coverage
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- ABOUT -->
+
+
+<section id="about" class="py-24">
+
+
+<div class="max-w-5xl mx-auto px-6 text-center"
+data-aos="fade-up">
+
+
+<h2 class="text-5xl font-bold mb-8">
+
+Tentang Kami
+
 </h2>
 
 
-<p class="text-gray-400 leading-8 max-w-4xl mx-auto">
 
-PT Dievas Putra Abadi merupakan perusahaan yang bergerak dalam bidang transportasi dan instalasi infrastruktur. Perusahaan telah mengajukan penawaran sebagai mitra VinFast untuk mendukung pembangunan dan instalasi stasiun pengisian daya kendaraan listrik (EV Charging Station) di Indonesia.
+<p class="text-gray-400 leading-8">
 
-Selain instalasi EV, kami menyediakan layanan pemasangan listrik, jaringan internet, sistem pendukung operasional, serta kebutuhan infrastruktur teknis lainnya.
+
+PT Dievas Putra Abadi bergerak dalam bidang transportasi,
+instalasi dan pembangunan infrastruktur teknis.
+
+Kami mendukung perkembangan kendaraan listrik melalui
+penyediaan instalasi EV Charging Station, sistem kelistrikan,
+jaringan komunikasi serta kebutuhan operasional proyek.
+
 
 </p>
 
@@ -253,6 +409,11 @@ Selain instalasi EV, kami menyediakan layanan pemasangan listrik, jaringan inter
 
 </section>
 
+
+
+
+
+<!-- SERVICES -->
 
 
 <section id="services" class="py-24 bg-black">
@@ -261,202 +422,475 @@ Selain instalasi EV, kami menyediakan layanan pemasangan listrik, jaringan inter
 <div class="max-w-7xl mx-auto px-6">
 
 
-<h2 class="section-title text-center">
+<h2 class="text-5xl font-bold text-center mb-14">
+
 Layanan Kami
+
 </h2>
 
 
+<div class="grid md:grid-cols-4 gap-6">
 
-<div class="grid md:grid-cols-4 gap-6 mt-12">
 
+<div class="glass rounded-3xl p-8">
 
-<div class="glass p-8 rounded-3xl">
+<div class="card-icon">
+⚡
+</div>
 
-<h3 class="text-xl font-bold mb-3">
+<h3 class="text-xl font-bold">
+
 EV Charging Station
+
 </h3>
 
-<p class="text-gray-400">
-Instalasi dan pembangunan fasilitas pengisian kendaraan listrik.
+<p class="text-gray-400 mt-4">
+
+Instalasi charger kendaraan listrik,
+survey lokasi hingga commissioning.
+
 </p>
+
 
 </div>
 
 
+<div class="glass rounded-3xl p-8">
 
-<div class="glass p-8 rounded-3xl">
+<div class="card-icon">
+🔌
+</div>
 
-<h3 class="text-xl font-bold mb-3">
-Instalasi Listrik
+<h3 class="text-xl font-bold">
+
+Electrical System
+
 </h3>
 
-<p class="text-gray-400">
-Pemasangan panel listrik, kabel, dan sistem kelistrikan pendukung.
+<p class="text-gray-400 mt-4">
+
+Panel listrik, kabel, proteksi dan distribusi.
+
 </p>
+
 
 </div>
 
 
 
-<div class="glass p-8 rounded-3xl">
+<div class="glass rounded-3xl p-8">
 
-<h3 class="text-xl font-bold mb-3">
-Jaringan Internet
+<div class="card-icon">
+🌐
+</div>
+
+<h3 class="text-xl font-bold">
+
+Network Infrastructure
+
 </h3>
 
-<p class="text-gray-400">
-Instalasi jaringan komunikasi dan konektivitas area operasional.
+<p class="text-gray-400 mt-4">
+
+Instalasi jaringan komunikasi dan konektivitas.
+
 </p>
+
 
 </div>
 
 
 
-<div class="glass p-8 rounded-3xl">
+<div class="glass rounded-3xl p-8">
 
-<h3 class="text-xl font-bold mb-3">
-Transportasi & Support
+<div class="card-icon">
+🚚
+</div>
+
+<h3 class="text-xl font-bold">
+
+Transport Support
+
 </h3>
 
-<p class="text-gray-400">
-Layanan transportasi dan dukungan teknis proyek lapangan.
+<p class="text-gray-400 mt-4">
+
+Dukungan transportasi dan kebutuhan proyek lapangan.
+
 </p>
 
-</div>
-
-
 
 </div>
 
 
+
 </div>
 
 
-</section>
+</div>
 
 
-<!-- GALLERY -->
-<section id="gallery" class="py-24">
+<!-- PROJECT -->
+
+<section id="project" class="py-24">
 
 <div class="max-w-7xl mx-auto px-6">
 
 
-<h2 class="section-title text-center">
-Project & Portfolio
+<h2 class="text-5xl font-bold text-center mb-6">
+
+Project Portfolio
+
 </h2>
 
 
-<p class="text-gray-400 text-center max-w-3xl mx-auto mb-12">
-Dokumentasi pekerjaan instalasi infrastruktur, kelistrikan,
-jaringan, dan fasilitas pendukung kendaraan listrik.
+<p class="text-gray-400 text-center max-w-3xl mx-auto mb-14">
+
+Dokumentasi pekerjaan instalasi infrastruktur,
+kelistrikan, jaringan dan fasilitas pendukung kendaraan listrik.
+
 </p>
 
 
 
-<div class="gallery grid md:grid-cols-2 gap-6">
+<div class="grid md:grid-cols-2 gap-8">
 
 
-<img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmYZKw8i7JElFC0BwiFxcbiIvTz3xO8bwxL1-a-OkVMFx-DTz5zfG0yHyzaH-sHIh85sJTKCMnU22fk5aVX1tHJY91tjutz2SzQEdPbn_BvwV02016Eg5DIqQzhu-paTK-sEJaYWWDjWmGH=s680-w680-h510-rw">
+<div class="glass rounded-3xl overflow-hidden">
+
+<img 
+src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmYZKw8i7JElFC0BwiFxcbiIvTz3xO8bwxL1-a-OkVMFx-DTz5zfG0yHyzaH-sHIh85sJTKCMnU22fk5aVX1tHJY91tjutz2SzQEdPbn_BvwV02016Eg5DIqQzhu-paTK-sEJaYWWDjWmGH=s680-w680-h510-rw"
+class="w-full h-80 object-cover">
 
 
-<img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkoZ24uTfhxnqT7N0CxPMBa4NRhRw9BHd4wWXY-zbGkh_-0MNhfYMCHe_eyKkirF9AVgClwWbZ-IsBhOVf0e93XWgTSzG-UUrPRCekdbS8UQPuMwaLRkAfuXhgfW3QfG8VQ_3Wogg=s680-w680-h510-rw">
+<div class="p-8">
 
+<h3 class="text-2xl font-bold">
 
-<img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk7EkojWQ9ylYsVGtIDjS9rGvIK8Y0gCn8N1OjfrHclG1qujK2yvDy5q1AIGHlpzaAZ4h1cxt9U_DmEUL2oAFFz8gn7DtAN_1Gr_F1kzZnRFlsDoZfjpgEsjrU0g8v5mjunnqEZ=s680-w680-h510-rw">
+Instalasi Infrastruktur EV
 
+</h3>
 
-<img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlctFU7-7suieLuQu0F0kXX0ogAJj2OoxGaZVm6e1fdk92u9pMs37Tehw_hsbfZAzB_neDOEq3_Vib8mdQSRxfTabWDs8v0OfQYieijlH1e_iBXMlGP4_05WxhL3Zt9PClGMsE=s680-w680-h510-rw">
+<p class="text-gray-400 mt-3">
+
+Pekerjaan instalasi dan support teknis
+untuk kebutuhan kendaraan listrik.
+
+</p>
+
+</div>
 
 
 </div>
+
+
+
+
+<div class="glass rounded-3xl overflow-hidden">
+
+
+<img 
+src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkoZ24uTfhxnqT7N0CxPMBa4NRhRw9BHd4wWXY-zbGkh_-0MNhfYMCHe_eyKkirF9AVgClwWbZ-IsBhOVf0e93XWgTSzG-UUrPRCekdbS8UQPuMwaLRkAfuXhgfW3QfG8VQ_3Wogg=s680-w680-h510-rw"
+class="w-full h-80 object-cover">
+
+
+<div class="p-8">
+
+<h3 class="text-2xl font-bold">
+
+Electrical Installation
+
+</h3>
+
+
+<p class="text-gray-400 mt-3">
+
+Sistem kelistrikan dan instalasi pendukung operasional.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="glass rounded-3xl overflow-hidden">
+
+
+<img 
+src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk7EkojWQ9ylYsVGtIDjS9rGvIK8Y0gCn8N1OjfrHclG1qujK2yvDy5q1AIGHlpzaAZ4h1cxt9U_DmEUL2oAFFz8gn7DtAN_1Gr_F1kzZnRFlsDoZfjpgEsjrU0g8v5mjunnqEZ=s680-w680-h510-rw"
+class="w-full h-80 object-cover">
+
+
+<div class="p-8">
+
+<h3 class="text-2xl font-bold">
+
+Technical Support
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+Dukungan teknis lapangan dan maintenance.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="glass rounded-3xl overflow-hidden">
+
+
+<img 
+src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlctFU7-7suieLuQu0F0kXX0ogAJj2OoxGaZVm6e1fdk92u9pMs37Tehw_hsbfZAzB_neDOEq3_Vib8mdQSRxfTabWDs8v0OfQYieijlH1e_iBXMlGP4_05WxhL3Zt9PClGMsE=s680-w680-h510-rw"
+class="w-full h-80 object-cover">
+
+
+<div class="p-8">
+
+<h3 class="text-2xl font-bold">
+
+Project Infrastructure
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+Solusi instalasi dan kebutuhan teknis proyek.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
 
 </div>
 
 </section>
+
+
+
+
+
+<!-- WORKFLOW -->
+
+
+<section class="py-24 bg-black">
+
+
+<div class="max-w-6xl mx-auto px-6">
+
+
+<h2 class="text-5xl font-bold text-center mb-14">
+
+Proses Kerja
+
+</h2>
+
+
+
+<div class="grid md:grid-cols-4 gap-6">
+
+
+<div class="glass rounded-3xl p-8 text-center">
+
+<h3 class="text-3xl font-bold text-green-400">
+01
+</h3>
+
+<p class="mt-4 font-bold">
+Survey
+</p>
+
+<p class="text-gray-400 mt-2">
+Analisa lokasi dan kebutuhan proyek.
+</p>
+
+</div>
+
+
+
+<div class="glass rounded-3xl p-8 text-center">
+
+<h3 class="text-3xl font-bold text-green-400">
+02
+</h3>
+
+<p class="mt-4 font-bold">
+Planning
+</p>
+
+<p class="text-gray-400 mt-2">
+Perencanaan sistem dan estimasi pekerjaan.
+</p>
+
+</div>
+
+
+
+<div class="glass rounded-3xl p-8 text-center">
+
+<h3 class="text-3xl font-bold text-green-400">
+03
+</h3>
+
+<p class="mt-4 font-bold">
+Installation
+</p>
+
+<p class="text-gray-400 mt-2">
+Pelaksanaan instalasi oleh tim teknis.
+</p>
+
+</div>
+
+
+
+<div class="glass rounded-3xl p-8 text-center">
+
+<h3 class="text-3xl font-bold text-green-400">
+04
+</h3>
+
+<p class="mt-4 font-bold">
+Support
+</p>
+
+<p class="text-gray-400 mt-2">
+Maintenance dan dukungan setelah proyek.
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
 
 
 
 <!-- CONTACT -->
 
-<section id="contact" class="py-24 bg-black">
+
+<section id="contact" class="py-24">
 
 
 <div class="max-w-3xl mx-auto px-6">
 
 
-<div class="glass p-10 rounded-3xl">
+<div class="glass rounded-3xl p-10">
 
 
-<h2 class="text-4xl font-bold text-center mb-8">
-Hubungi Kami
+<h2 class="text-4xl font-bold text-center mb-10">
+
+Konsultasi Proyek
+
 </h2>
 
 
 
 <select id="service"
-class="w-full p-4 rounded-xl bg-black border border-gray-700 mb-4">
+class="w-full bg-black border border-gray-700 rounded-xl p-4 mb-4">
 
 
 <option value="">
 Pilih Kebutuhan
 </option>
 
+
 <option>
 Instalasi EV Charging Station
 </option>
+
 
 <option>
 Instalasi Listrik
 </option>
 
+
 <option>
-Instalasi Internet / Jaringan
+Jaringan Internet
 </option>
+
 
 <option>
 Transportasi Proyek
 </option>
+
 
 </select>
 
 
 
 
-<select id="project"
-class="w-full p-4 rounded-xl bg-black border border-grayi-700 mb-4">
+
+<select id="projectType"
+class="w-full bg-black border border-gray-700 rounded-xl p-4 mb-6">
 
 
 <option value="">
 Jenis Proyek
 </option>
 
+
 <option>
-Rumah / Pribadi
+Rumah
 </option>
+
 
 <option>
 Perusahaan
 </option>
 
+
 <option>
-Dealer Kendaraan Listrik
+Dealer EV
 </option>
+
 
 <option>
 Area Komersial
 </option>
 
+
 </select>
 
 
 
-
 <button onclick="generateWA()"
-class="w-full bg-white text-black font-bold py-4 rounded-xl">
+class="w-full btn-primary">
 
-Kirim Konsultasi WhatsApp
+
+Kirim WhatsApp
+
 
 </button>
+
 
 
 </div>
@@ -470,28 +904,40 @@ Kirim Konsultasi WhatsApp
 
 
 
+
+
+
 <!-- FOOTER -->
 
-<footer class="py-10 text-center border-t border-gray-800">
+
+<footer class="border-t border-gray-800 py-10 text-center">
 
 
-<h3 class="font-bold text-xl mb-2">
+<h3 class="font-bold text-xl">
+
 PT DIEVAS PUTRA ABADI
+
 </h3>
 
 
-<p class="text-gray-500">
-Transportasi & Instalasi Infrastruktur EV Indonesia
+<p class="text-gray-500 mt-3">
+
+Transportasi & Infrastruktur EV Indonesia
+
 </p>
 
 
 <p class="text-gray-500 mt-3">
-WhatsApp: +62 812-1444-4102
+
+WhatsApp : +62 812-1444-4102
+
 </p>
 
 
-<p class="text-gray-600 mt-4">
+<p class="text-gray-600 mt-5">
+
 © 2026 PT Dievas Putra Abadi
+
 </p>
 
 
@@ -500,36 +946,48 @@ WhatsApp: +62 812-1444-4102
 
 
 
-<!-- FLOAT WHATSAPP -->
+
+
 
 <a href="https://wa.me/6281214444102"
 class="wa">
 
-💬 Chat WhatsApp
+💬 WhatsApp
 
 </a>
 
 
 
 
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 <script>
+
+
+AOS.init({
+duration:1000
+});
+
 
 
 function generateWA(){
 
 
 let service =
-document.getElementById('service').value;
+document.getElementById("service").value;
 
 
 let project =
-document.getElementById('project').value;
+document.getElementById("projectType").value;
 
 
 
 if(service=="" || project==""){
 
-alert("Lengkapi data terlebih dahulu");
+alert("Mohon pilih kebutuhan dan jenis proyek");
 
 return;
 
@@ -537,31 +995,29 @@ return;
 
 
 
-let text =
+let message =
 
-`Halo PT Dievas Putra Abadi 👋%0A%0A
+`Halo PT Dievas Putra Abadi 👋
 
-Saya ingin konsultasi proyek.%0A%0A
+Saya ingin konsultasi proyek.
 
-Kebutuhan:%20${service}%0A
+Kebutuhan:
+${service}
 
-Jenis Proyek:%20${project}%0A%0A
+Jenis Proyek:
+${project}
 
-Mohon informasi terkait:%0A
-
-- Estimasi biaya%0A
-
-- Waktu pengerjaan%0A
-
-- Survey lokasi%0A
-
-Terima kasih.`;
-
+Mohon informasi:
+- Estimasi biaya
+- Survey lokasi
+- Waktu pengerjaan`;
 
 
 window.open(
 
-"https://wa.me/6281214444102?text="+text,
+"https://wa.me/6281214444102?text="
++
+encodeURIComponent(message),
 
 "_blank"
 
@@ -578,3 +1034,8 @@ window.open(
 </body>
 
 </html>
+
+  
+
+
+</section>
